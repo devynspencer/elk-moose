@@ -1,5 +1,5 @@
 # elk-moose
-Quickly analyze flat files.
+Quickly analyze Windows event logs.
 
 ```powershell
 # Rebuild environment, watch Logstash output

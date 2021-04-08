@@ -1,0 +1,4 @@
+---
+
+- pipeline.id: default-output
+  path.config: /usr/share/logstash/pipeline/default-output.conf

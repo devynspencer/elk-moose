@@ -98,10 +98,10 @@
           "type": "keyword"
         },
         "vpn_session_start": {
-          "type": "text"
+          "type": "date"
         },
         "vpn_session_end": {
-          "type": "text"
+          "type": "date"
         },
         "vpn_session_minutes": {
           "type": "integer"

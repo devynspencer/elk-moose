@@ -87,6 +87,42 @@
         },
         "correlation_id": {
           "type": "keyword"
+        },
+        "vpn_client_hostname": {
+          "type": "keyword"
+        },
+        "vpn_client_ip": {
+          "type": "ip"
+        },
+        "vpn_client_port": {
+          "type": "keyword"
+        },
+        "vpn_session_start": {
+          "type": "text"
+        },
+        "vpn_session_end": {
+          "type": "text"
+        },
+        "vpn_session_minutes": {
+          "type": "integer"
+        },
+        "vpn_session_seconds": {
+          "type": "integer"
+        },
+        "vpn_bytes_sent": {
+          "type": "long"
+        },
+        "vpn_bytes_received": {
+          "type": "long"
+        },
+        "vpn_session_end_reason": {
+          "type": "text"
+        },
+        "vpn_tunnel_interface": {
+          "type": "keyword"
+        },
+        "vpn_quarantine_state": {
+          "type": "text"
         }
       }
     }

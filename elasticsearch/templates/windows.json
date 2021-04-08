@@ -40,6 +40,26 @@
         "@version": {
           "type": "keyword"
         },
+        "service": {
+          "properties": {
+            "id": {
+              "type": "keyword"
+            },
+            "name": {
+              "type": "keyword"
+            },
+            "node": {
+              "properties": {
+                "name": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "type": {
+              "type": "keyword"
+            }
+          }
+        },
         "activity_id": {
           "type": "keyword"
         },

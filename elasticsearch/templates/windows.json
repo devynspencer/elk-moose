@@ -39,6 +39,57 @@
         },
         "@version": {
           "type": "keyword"
+        },
+        "activity_id": {
+          "type": "text"
+        },
+        "process_id": {
+          "type": "text"
+        },
+        "event_body": {
+          "type": "text"
+        },
+        "event_id": {
+          "type": "keyword"
+        },
+        "event_time": {
+          "type": "text"
+        },
+        "event_user": {
+          "type": "keyword"
+        },
+        "event_version": {
+          "type": "keyword"
+        },
+        "host": {
+          "type": "keyword"
+        },
+        "hostname": {
+          "type": "keyword"
+        },
+        "keywords": {
+          "type": "keyword"
+        },
+        "level_name": {
+          "type": "keyword"
+        },
+        "log_name": {
+          "type": "keyword"
+        },
+        "opcode_name": {
+          "type": "keyword"
+        },
+        "task_name": {
+          "type": "keyword"
+        },
+        "provider_name": {
+          "type": "keyword"
+        },
+        "record_id": {
+          "type": "keyword"
+        },
+        "correlation_id": {
+          "type": "keyword"
         }
       }
     }

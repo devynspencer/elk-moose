@@ -55,9 +55,6 @@
         "event_time": {
           "type": "text"
         },
-        "event_user": {
-          "type": "keyword"
-        },
         "event_version": {
           "type": "keyword"
         },

@@ -2,6 +2,9 @@
 Quickly analyze flat files.
 
 ```powershell
+# Rebuild environment, watch Logstash output
+docker-compose down --volumes; docker-compose up --detach; docker-compose logs --follow logstash
+
 # Create Windows index template
 Invoke-RestMethod "http://localhost:9200/_index_template/windows" -InFile "./elasticsearch/templates/windows.json" -Method Put -ContentType application/json
 

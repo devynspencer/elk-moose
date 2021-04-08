@@ -41,10 +41,10 @@
           "type": "keyword"
         },
         "activity_id": {
-          "type": "text"
+          "type": "keyword"
         },
         "process_id": {
-          "type": "text"
+          "type": "keyword"
         },
         "event_body": {
           "type": "text"

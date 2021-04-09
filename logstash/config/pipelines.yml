@@ -3,6 +3,9 @@
 - pipeline.id: windows-input
   path.config: /usr/share/logstash/pipeline/windows-input.conf
 
+- pipeline.id: windows-vpn
+  path.config: /usr/share/logstash/pipeline/windows-vpn.conf
+
 - pipeline.id: windows-output
   path.config: /usr/share/logstash/pipeline/windows-output.conf
 

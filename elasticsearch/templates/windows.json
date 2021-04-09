@@ -5,30 +5,30 @@
   "priority": 1,
   "template": {
     "mappings": {
-      "dynamic_templates" : [
+      "dynamic_templates": [
         {
-          "message_field" : {
-            "path_match" : "message",
-            "match_mapping_type" : "string",
-            "mapping" : {
-              "norms" : false,
-              "type" : "text"
+          "message_field": {
+            "path_match": "message",
+            "match_mapping_type": "string",
+            "mapping": {
+              "norms": false,
+              "type": "text"
             }
           }
         },
         {
-          "string_fields" : {
-            "match" : "*",
-            "match_mapping_type" : "string",
-            "mapping" : {
-              "fields" : {
-                "keyword" : {
-                  "ignore_above" : 256,
-                  "type" : "keyword"
+          "string_fields": {
+            "match": "*",
+            "match_mapping_type": "string",
+            "mapping": {
+              "fields": {
+                "keyword": {
+                  "ignore_above": 256,
+                  "type": "keyword"
                 }
               },
-              "norms" : false,
-              "type" : "text"
+              "norms": false,
+              "type": "text"
             }
           }
         }

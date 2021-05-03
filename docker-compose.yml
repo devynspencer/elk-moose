@@ -2,10 +2,7 @@ version: "3.2"
 
 services:
   elasticsearch:
-    build:
-      context: elasticsearch/
-      args:
-        ELK_VERSION: $ELK_VERSION
+    image: docker.elastic.co/elasticsearch/elasticsearch:${ELK_VERSION}
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
       - elasticsearch:/usr/share/elasticsearch/data
@@ -22,10 +19,7 @@ services:
       - elk
 
   logstash:
-    build:
-      context: logstash/
-      args:
-        ELK_VERSION: $ELK_VERSION
+    image: docker.elastic.co/logstash/logstash:${ELK_VERSION}
     volumes:
       - ./logstash/config:/usr/share/logstash/config
       - ./logstash/pipeline:/usr/share/logstash/pipeline
@@ -43,10 +37,7 @@ services:
       - elasticsearch
 
   kibana:
-    build:
-      context: kibana/
-      args:
-        ELK_VERSION: $ELK_VERSION
+    image: docker.elastic.co/kibana/kibana:${ELK_VERSION}
     volumes:
       - ./kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml
     ports:
